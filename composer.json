@@ -1,0 +1,39 @@
+{
+    "name": "reddevs/djalara-admin",
+    "description": "Django like admin for laravel framework",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mirjan Asymbaev",
+            "email": "mirjan.asymbaev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "nwidart/laravel-modules": "^2.0",
+      "spatie/laravel-permission": "^3",
+      "jeroennoten/laravel-adminlte": "^1.24"
+    },
+    "require-dev": {
+      "orchestra/testbench": "~3.0"
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Reddevs\\DjaLaraAdmin\\AdminServiceProvider"
+        ]
+      }
+    },
+    "autoload": {
+      "psr-4": {
+        "Reddevs\\DjaLaraAdmin\\": "src"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "Reddevs\\DjaLaraAdmin\\Tests\\": "tests"
+      }
+    }
+}
